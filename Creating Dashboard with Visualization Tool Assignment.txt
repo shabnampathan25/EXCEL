@@ -1,0 +1,168 @@
+Module 5) Creating Dashboard with Visualization Tool
+
+=========================================================================================================================================================================
+
+                                                          Assignment 
+___________________________________________________________________________________________________________________________________________________________________________
+
+1) What is Power BI and how does it differ from Excel?
+Answers:- 	
+Power BI is a business intelligence tool used for data visualization, reporting, and analysis.
+Excel is mainly used for data storage, calculations, and spreadsheet-based analysis.
+Differences:
+Power BI handles large datasets better than Excel.
+Power BI has interactive dashboards, whereas Excel has static charts.
+Power BI supports real-time data updates, but Excel requires manual updates.
+_____________________________________________________________________________________________________________________________________________________________________________
+
+2) Explain the concept of data modeling in Power BI.
+Answers:- 
+Data modeling involves connecting multiple tables using relationships.
+It helps in creating an optimized and structured data model for analysis.
+Uses Primary Key - Foreign Key relationships to connect data tables.	
+_______________________________________________________________________________________________________________________________________________________________________________
+
+3) What are the different types of connections available in Power BI?
+Answers:- 
+Import Mode – Data is imported into Power BI’s memory (fastest performance).
+DirectQuery – Queries data directly from the source (real-time updates).
+Live Connection – Direct connection to SSAS (SQL Server Analysis Services). 	
+_________________________________________________________________________________________________________________________________________________________________________________
+
+4) How do you handle data transformation in Power BI?
+Answers:- 
+Use Power Query Editor to clean and transform data.
+
+Steps include:
+Removing duplicates and nulls
+Changing data types
+Merging or splitting columns
+Creating calculated columns 
+___________________________________________________________________________________________________________________________________________________________________________________
+
+5) What is DAX (Data Analysis Expressions) and why is it important in Power BI?
+Answers:- 
+DAX is a formula language used for calculations and aggregations.
+It allows creating calculated columns, measures, and tables.
+Helps in time-based analysis, filtering, and complex calculations.	
+_____________________________________________________________________________________________________________________________________________________________________________________
+
+6) Can you explain the difference between calculated columns and measures in Power BI?
+Answers:- 
++--------------------------------------------------------------------------------------------+
+|Feature		Calculated Columns		Measures		  	     |
++--------------------------------------------------------------------------------------------+
+| Storage		Stored in the table		Calculated at runtime		     |
+| Performance		Uses more memory		More efficient                       |
+| Use Case		Row-level calculations		Aggregations like SUM, AVG, COUNT    |
++--------------------------------------------------------------------------------------------+
+________________________________________________________________________________________________________________________________________________________________________________________
+
+7) How do you handle relationships between tables in Power BI?
+Answers:- 
+Use Manage Relationships to define one-to-many or many-to-one relationships.
+Set cross-filter direction (single or both).
+Avoid ambiguous relationships by maintaining proper keys.	
+___________________________________________________________________________________________________________________________________________________________________________________________
+
+8) What is the purpose of a Power BI Gateway?
+Answers:- 
+A Power BI Gateway connects on-premises data sources to Power BI Service.
+Allows scheduled refresh and live connections.	
+_______________________________________________________________________________________________________________________________________________________________________________________________
+
+9) How can you schedule data refresh in Power BI Service?
+Answers:- 
+In Power BI Service, go to Dataset → Schedule Refresh.
+Set time intervals for automatic updates.
+Requires a Power BI Gateway for on-premises data.	
+_________________________________________________________________________________________________________________________________________________________________________________________________
+
+10) Explain the concept of row-level security in Power BI.
+Answers:- 
+RLS restricts access to data based on user roles.
+Implemented using DAX filters in Power BI Desktop.
+Assigned in Power BI Service for security control.
+	
+____________________________________________________________________________________________________________________________________________________________________________________________________
+
+11) What is the Power BI Desktop and how does it differ from Power BI Service?
+Answers:- 
+Power BI Desktop – Used for data modeling, transformations, and report creation.
+Power BI Service – A cloud-based platform for sharing and collaboration.
+______________________________________________________________________________________________________________________________________________________________________________________________________
+ 
+12) Explain the concept of Direct Query in Power BI.
+Answers:- 	
+Data is not imported, instead, queries are sent directly to the source.
+Useful for real-time data but slower performance compared to Import Mode.
+__________________________________________________________________________________________________________________________________________________________________________________________________________
+
+13) What are Power BI templates and how are they useful?
+Answers:- 
+PBIT files store report structure without data.
+Useful for reusing report designs with different datasets.	
+_________________________________________________________________________________________________________________________________________________________________________________________________________
+
+14) How do you handle incremental data refresh in Power BI?
+Answers:- 
+Define RangeStart and RangeEnd parameters.
+Enable Incremental Refresh in Power BI Service.
+Improves performance by loading only new data.	
+__________________________________________________________________________________________________________________________________________________________________________________________________________
+
+15) What is the role of Power Query in Power BI?
+Answers:- 
+Power Query is used for ETL (Extract, Transform, Load) operations.
+Helps in cleaning and shaping data before loading it into Power BI.	
+__________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+16) Explain the difference between calculated columns and calculated tables in Power BI.
+Answers:-
++--------------------------------------------------------------------------------------------+
+| Feature		Calculated Columns		Calculated Tables		     |
++--------------------------------------------------------------------------------------------+
+| Function		Adds a new column		Creates a new table		     |
+| Storage		Stored in the same table	Stored as a separate table	     |
+| Use Case		Row-level calculations		Derived datasets from existing data  |
++--------------------------------------------------------------------------------------------+
+_______________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+17) How do you create custom visuals in Power BI?
+Answers:- 	
+Use Power BI Developer Tools.
+Write code using TypeScript and D3.js.
+Import custom visuals (.pbiviz files) into reports.
+____________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+18) What are the best practices for optimizing performance in Power BI?
+Answers:- 
+Use Import Mode instead of DirectQuery.
+Remove unnecessary columns and rows.
+Optimize DAX calculations and use aggregations.	
+____________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+19) How can you integrate Power BI with other Microsoft products like Azure and Office 365?
+Answers:- 
+Azure – Connect to Azure SQL, Synapse, or Data Lake.
+Office 365 – Embed reports in SharePoint, Teams, and Excel.	
+_______________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+20) Explain the concept of aggregations in Power BI.
+Answers:- 
+Aggregations pre-calculate data to improve performance.
+Helps in reducing query load and speeding up analysis.	
+___________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+21) How do you handle error handling and data quality in Power BI?
+Answers:- 
+Use Power Query’s error-handling functions.
+Apply data validation rules.
+Handle null values, duplicates, and incorrect data types.	
+_________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+22) What is the purpose of Power BI Embedded and when would you use it?
+Answers:- 	
+Power BI Embedded allows developers to integrate Power BI reports into applications.
+Used for interactive analytics within web applications.
+_________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
